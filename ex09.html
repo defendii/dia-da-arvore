@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    Altura: <input id = "input_altura" type="text"> <br>
-    Largura: <input id = "input_largura" type="text"> <br>
-    Preço metro: <input id = "input_precometro" type="text"> <br>
+    Altura: <input id = "input_altura" type="text"> <br> <br>
+    Largura: <input id = "input_largura" type="text"> <br> <br>
+    Preço metro: <input id = "input_precometro" type="text"> <br> <br>
 
     <button onclick="calculaArea()">Calcular</button>
 
@@ -17,9 +17,12 @@
     
     <script>
         function calculaArea(){
-            let largura = document.getElementById("input_largura").value
+            let altura = document.getElementById("input_largura").value
+            let largura = document.getElementById("input_altura").value
+            let precometro = document.getElementById("input_precometro").value
             console.log(largura)
-            window.alert(largura * 2)
+            window.alert("Tamanho Terreno: " + largura * altura)
+            window.alert("Valor Terreno: " + largura * altura * precometro)
         }
     </script>
 
